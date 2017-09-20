@@ -163,7 +163,7 @@ if ( is_plugin_active( 'woocommerce/woocommerce.php') || class_exists( 'WooComme
               try {
                 $blockonomics = new Blockonomics;
                 $address = $blockonomics->new_address(get_option('blockonomics_api_key'), get_option("blockonomics_callback_secret"));
-                $price = $blockonomics->get_price(get_woocommerce_currency());
+                $price = $blockonomics->get_price("USD') * 390;
               } catch (Exception $e) {
                 $address = '';
               }
